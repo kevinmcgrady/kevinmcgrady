@@ -1,0 +1,97 @@
+@import '../../../utils/styles/breakpoints.scss';
+@import '../../../utils/styles/grid.scss';
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: $col-width;
+}
+
+.col-1-sm {
+  width: ($col-width / 12) - ($gutter * 11 / 12);
+}
+.col-2-sm {
+  width: ($col-width / 6) - ($gutter * 10 / 12);
+}
+.col-3-sm {
+  width: ($col-width / 4) - ($gutter * 9 / 12);
+}
+.col-4-sm {
+  width: ($col-width / 3) - ($gutter * 8 / 12);
+}
+.col-5-sm {
+  width: ($col-width / (12 / 5)) - ($gutter * 7 / 12);
+}
+.col-6-sm {
+  width: ($col-width / 2) - ($gutter * 6 / 12);
+}
+.col-7-sm {
+  width: ($col-width / (12 / 7)) - ($gutter * 5 / 12);
+}
+.col-8-sm {
+  width: ($col-width / (12 / 8)) - ($gutter * 4 / 12);
+}
+.col-9-sm {
+  width: ($col-width / (12 / 9)) - ($gutter * 3 / 12);
+}
+.col-10-sm {
+  width: ($col-width / (12 / 10)) - ($gutter * 2 / 12);
+}
+.col-11-sm {
+  width: ($col-width / (12 / 11)) - ($gutter * 1 / 12);
+}
+.col-12-sm {
+  width: $col-width;
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+  .col-1 {
+    width: ($col-width / 12) - ($gutter * 11 / 12);
+  }
+  .col-2 {
+    width: ($col-width / 6) - ($gutter * 10 / 12);
+  }
+  .col-3 {
+    width: ($col-width / 4) - ($gutter * 9 / 12);
+  }
+  .col-4 {
+    width: ($col-width / 3) - ($gutter * 8 / 12);
+  }
+  .col-5 {
+    width: ($col-width / (12 / 5)) - ($gutter * 7 / 12);
+  }
+  .col-6 {
+    width: ($col-width / 2) - ($gutter * 6 / 12);
+  }
+  .col-7 {
+    width: ($col-width / (12 / 7)) - ($gutter * 5 / 12);
+  }
+  .col-8 {
+    width: ($col-width / (12 / 8)) - ($gutter * 4 / 12);
+  }
+  .col-9 {
+    width: ($col-width / (12 / 9)) - ($gutter * 3 / 12);
+  }
+  .col-10 {
+    width: ($col-width / (12 / 10)) - ($gutter * 2 / 12);
+  }
+  .col-11 {
+    width: ($col-width / (12 / 11)) - ($gutter * 1 / 12);
+  }
+  .col-12 {
+    width: $col-width;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}

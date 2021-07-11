@@ -1,0 +1,23 @@
+@import '../../../utils/styles/colors.scss';
+@import '../../../utils/styles/spacing.scss';
+
+.background-default {
+  background-color: $light-grey;
+}
+
+.background-blue {
+  background-color: $light-blue;
+}
+
+.background-orange {
+  background-color: $orange;
+}
+
+.background-purple {
+  background-color: $purple;
+}
+
+.background-gutter {
+  padding-top: $spacing-lg;
+  padding-bottom: $spacing-lg;
+}

@@ -1,0 +1,89 @@
+@import '../../../utils/styles/colors.scss';
+@import '../../../utils/styles/fonts.scss';
+@import '../../../utils/styles/breakpoints.scss';
+
+h1 {
+  font-size: $font-size-title;
+  font-family: $font-source-serif;
+}
+
+@media only screen and (max-width: $breakpoint-small) {
+  h1 {
+    font-size: $font-size-title-mobile;
+  }
+}
+
+h2 {
+  font-size: $font-size-sub-title;
+  font-weight: $font-weight-light;
+}
+
+h3 {
+  font-size: $font-size-heading;
+  font-family: $font-source-serif;
+}
+
+h4 {
+  font-size: $font-size-sub-heading;
+  font-family: $font-source-serif;
+}
+
+p {
+  font-size: $font-size-body;
+  font-weight: $font-weight-light;
+  line-height: $font-height-large;
+}
+
+p.footer-text {
+  font-size: $font-size-footer-text;
+  font-weight: $font-weight-light;
+  line-height: $font-height-large;
+}
+
+main.gradiant-text {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+main.gradiant-text h1 {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(
+    to bottom,
+    $dark-blue,
+    $dark-blue 60%,
+    $light-grey 60%,
+    $light-grey 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
+  transition: background 0.2s ease-out;
+  white-space: nowrap;
+}
+
+main.gradiant-text span {
+  position: relative;
+}
+
+main.gradiant-text span:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 33px;
+  background: $dark-blue;
+  bottom: 9px;
+}
+
+@media only screen and (max-width: $breakpoint-small) {
+  main.gradiant-text span:before {
+    bottom: -2px;
+  }
+}
+
+.center {
+  text-align: center;
+}

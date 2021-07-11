@@ -1,0 +1,53 @@
+@import '../../../utils/styles/spacing.scss';
+
+// Top
+.spacing-top-sm {
+  margin-top: $spacing-sm;
+}
+
+.spacing-top-md {
+  margin-top: $spacing-md;
+}
+
+.spacing-top-lg {
+  margin-top: $spacing-lg;
+}
+
+// Bottom
+.spacing-bottom-sm {
+  margin-bottom: $spacing-sm;
+}
+
+.spacing-bottom-md {
+  margin-bottom: $spacing-md;
+}
+
+.spacing-bottom-lg {
+  margin-bottom: $spacing-lg;
+}
+
+// Left
+.spacing-left-sm {
+  margin-left: $spacing-sm;
+}
+
+.spacing-left-md {
+  margin-left: $spacing-md;
+}
+
+.spacing-left-lg {
+  margin-left: $spacing-lg;
+}
+
+// Right
+.spacing-right-sm {
+  margin-right: $spacing-sm;
+}
+
+.spacing-right-md {
+  margin-right: $spacing-md;
+}
+
+.spacing-right-lg {
+  margin-right: $spacing-lg;
+}

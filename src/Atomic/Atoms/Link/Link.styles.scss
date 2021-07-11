@@ -1,0 +1,73 @@
+@import '../../../utils/styles/colors.scss';
+@import '../../../utils/styles/fonts.scss';
+@import '../../../utils/styles/spacing.scss';
+
+.navigation-link {
+  color: $dark-blue;
+  font-size: $deafult-link-size;
+  margin-left: $spacing-md;
+  text-decoration: none;
+}
+
+.cta-link {
+  color: $dark-blue;
+  font-size: $deafult-link-size;
+  font-weight: $font-weight-med;
+  text-decoration: none;
+}
+
+.link-padding {
+  padding-left: $spacing-md;
+}
+
+main.gradient-link {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.gradient-link a {
+  cursor: pointer;
+  letter-spacing: 5px;
+  position: relative;
+  display: inline-block;
+  font-size: $deafult-link-size;
+  background: linear-gradient(
+    to bottom,
+    $dark-blue,
+    $dark-blue 40%,
+    $light-grey 40%,
+    $light-grey 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
+  transition: background 0.2s ease-out;
+  white-space: nowrap;
+  font-weight: $font-weight-light;
+}
+
+.gradient-link span {
+  position: relative;
+}
+
+.gradient-link span:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: $dark-blue;
+  bottom: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.gradient-link a:hover {
+  background-position: 0 7px;
+}
+
+.gradient-link span:hover:before {
+  transform: translateY(4px);
+  height: 10px;
+}

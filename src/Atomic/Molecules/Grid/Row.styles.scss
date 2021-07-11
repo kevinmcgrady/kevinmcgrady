@@ -1,0 +1,25 @@
+@import '../../../utils/styles/grid.scss';
+@import '../../../utils//styles/breakpoints.scss';
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^='col'] {
+  float: left;
+  margin: $row-margin;
+  min-height: $row-min-height;
+}
+
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: $breakpoint-large) {
+  .hide-mobile {
+    display: none;
+  }
+}
