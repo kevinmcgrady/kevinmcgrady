@@ -21,6 +21,10 @@ body {
   line-height: $font-height;
 }
 
+li {
+  list-style-type: none;
+}
+
 .app {
   margin: $default-spacing;
 }
