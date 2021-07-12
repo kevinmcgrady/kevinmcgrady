@@ -1,8 +1,23 @@
+@import '../../../utils/styles/breakpoints.scss';
+
 .project-image {
   overflow: hidden;
   border-radius: 8px;
   img {
     border-radius: 8px;
     transition: all 300ms ease-in-out;
+  }
+}
+
+@media screen and (max-width: $breakpoint-large) {
+  .project-card {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: $breakpoint-med) {
+  .project-card {
+    display: block;
   }
 }

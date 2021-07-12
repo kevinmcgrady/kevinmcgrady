@@ -7,7 +7,7 @@ h1 {
   font-family: $font-source-serif;
 }
 
-@media only screen and (max-width: $breakpoint-small) {
+@media only screen and (max-width: $breakpoint-med) {
   h1 {
     font-size: $font-size-title-mobile;
   }
@@ -78,7 +78,7 @@ main.gradiant-text span:before {
   bottom: 9px;
 }
 
-@media only screen and (max-width: $breakpoint-small) {
+@media only screen and (max-width: $breakpoint-med) {
   main.gradiant-text span:before {
     bottom: -2px;
   }

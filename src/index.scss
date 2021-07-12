@@ -2,6 +2,7 @@
 @import './utils/styles/fonts.scss';
 @import './utils/styles/spacing.scss';
 @import './utils/styles/animations.scss';
+@import './utils/styles/breakpoints.scss';
 
 html,
 body {
@@ -27,4 +28,10 @@ li {
 
 .app {
   margin: $default-spacing;
+}
+
+@media screen and (max-width: $breakpoint-small) {
+  .app {
+    margin: 0;
+  }
 }
