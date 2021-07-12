@@ -78,9 +78,19 @@ main.gradiant-text span:before {
   bottom: 9px;
 }
 
+@media only screen and (min-width: $breakpoint-med) {
+  main.gradiant-text.hide-desktop {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: $breakpoint-med) {
   main.gradiant-text span:before {
     bottom: -2px;
+  }
+
+  main.gradiant-text.hide-mobile {
+    display: none;
   }
 }
 

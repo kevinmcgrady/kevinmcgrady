@@ -23,7 +23,6 @@ export const Image: React.FC<IImageProps> = ({
         width={width ? width : 'auto'}
         alt={alt}
         className={center ? 'image-center' : ''}
-        loading='lazy'
       />
     </picture>
   ) : (

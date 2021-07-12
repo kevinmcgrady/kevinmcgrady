@@ -15,11 +15,11 @@ const About: React.FC = () => {
   return (
     <Background>
       <Page>
-        <Spacer top='sm' />
+        <Spacer top='lg' />
         <Grid>
           <Row>
             <Column size={5}>
-              <div className='about-image hide-mobile'>
+              <div className='about-image'>
                 <Image url={aboutImage} alt='' width='100%' />
                 <Spacer bottom='md' />
                 <Typography>

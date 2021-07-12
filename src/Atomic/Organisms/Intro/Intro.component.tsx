@@ -8,10 +8,15 @@ export const Intro: React.FC = () => (
   <Grid>
     <Row>
       <Column size={7}>
-        <Spacer bottom='md' top='md'>
+        <Spacer bottom='md' top='lg'>
           <ScrollingAnimation>
             <Typography variant='title'>Hey, there</Typography>
-            <Typography variant='gradiant'>I'm Kev McGrady</Typography>
+            <Typography className='hide-mobile' variant='gradiant'>
+              I'm Kev McGrady
+            </Typography>
+            <Typography className='hide-desktop' variant='gradiant'>
+              I'm Kev
+            </Typography>
           </ScrollingAnimation>
         </Spacer>
         <ScrollingAnimation isDelay>

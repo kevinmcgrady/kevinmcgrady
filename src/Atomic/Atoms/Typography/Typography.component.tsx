@@ -14,11 +14,13 @@ type Variant =
 interface ITypographyProps {
   variant?: Variant;
   center?: boolean;
+  className?: string;
 }
 
 export const Typography: React.FC<ITypographyProps> = ({
   variant = 'body',
   center,
+  className,
   children,
 }) => {
   if (variant === 'title') {
@@ -37,7 +39,7 @@ export const Typography: React.FC<ITypographyProps> = ({
     );
   } else if (variant === 'gradiant') {
     return (
-      <main className='gradiant-text'>
+      <main className={`${className ? className : ''} gradiant-text`}>
         <span>
           <h1>{children}</h1>
         </span>
