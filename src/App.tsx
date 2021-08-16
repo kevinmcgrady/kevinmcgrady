@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import { ScrollReset } from './Atomic/Molecules/ScrollReset';
 import { Urls } from './utils/urls';
 import Loading from './Atomic/Pages/Loading/Loading.component';
 import Error from './Atomic/Pages/Error/Error.component';
@@ -35,23 +36,25 @@ const About = React.lazy(() => {
 function App() {
   return (
     <div className='app'>
-      <Suspense fallback={<Loading />}>
-        <Switch>
-          <Route
-            path={Urls.mainNavigation.homepage}
-            exact
-            component={Homepage}
-          />
-          <Route
-            path={Urls.caseStudys.clownClothing}
-            exact
-            component={CrownClothing}
-          />
-          <Route path={Urls.caseStudys.natours} exact component={Natours} />
-          <Route path={Urls.mainNavigation.about} exact component={About} />
-          <Route component={Error} />
-        </Switch>
-      </Suspense>
+      <ScrollReset>
+        <Suspense fallback={<Loading />}>
+          <Switch>
+            <Route
+              path={Urls.mainNavigation.homepage}
+              exact
+              component={Homepage}
+            />
+            <Route
+              path={Urls.caseStudys.clownClothing}
+              exact
+              component={CrownClothing}
+            />
+            <Route path={Urls.caseStudys.natours} exact component={Natours} />
+            <Route path={Urls.mainNavigation.about} exact component={About} />
+            <Route component={Error} />
+          </Switch>
+        </Suspense>
+      </ScrollReset>
     </div>
   );
 }
