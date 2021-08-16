@@ -1,5 +1,6 @@
 import React from 'react';
 import { CaseStudyTemplate } from '../../Organisms/Templates/CaseStudy/CaseStudy.template';
+import { Urls } from '../../../utils/urls';
 import crownClothing from '../../../assets/images/crown-clothing.png';
 import crownClothingMobile from '../../../assets/images/crown-clothing-small.png';
 
@@ -26,7 +27,7 @@ const CrownClothing: React.FC = () => (
     ]}
     subTitle='The one-stop clothing store for fashion'
     title='Crown Clothing'
-    projectUrl='https://github.com/kevinmcgrady/Crown-Clothing'
+    projectUrl={Urls.gitHub.crownClothing}
   />
 );
 

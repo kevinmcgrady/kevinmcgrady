@@ -6,6 +6,7 @@ import { Typography } from '../../Atoms/Typography/Typography.component';
 import { Link } from '../../Atoms/Link/Link.component';
 import { Spacer } from '../../Molecules/Spacer/Spacer.component';
 import { Image } from '../../Atoms/Image/Image.component';
+import { Urls } from '../../../utils/urls';
 
 import aboutImage from '../../../assets/images/me.webp';
 
@@ -74,7 +75,7 @@ const About: React.FC = () => {
                 experiencing new activities and finding a good cycle route! 🚲
               </Typography>
               <Spacer top='md' />
-              <Link to='/' variant='gradient'>
+              <Link to={Urls.documents.cv} variant='gradient-external'>
                 VIEW CV
               </Link>
             </Column>

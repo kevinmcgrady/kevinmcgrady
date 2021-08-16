@@ -45,7 +45,7 @@ function App() {
               component={Homepage}
             />
             <Route
-              path={Urls.caseStudys.clownClothing}
+              path={Urls.caseStudys.crownClothing}
               exact
               component={CrownClothing}
             />

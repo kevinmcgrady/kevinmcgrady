@@ -35,7 +35,7 @@ const Natours: React.FC = () => (
     ]}
     subTitle='The all in one application to book unique tours'
     title='Natours'
-    projectUrl={Urls.caseStudys.natours}
+    projectUrl={Urls.gitHub.natours}
   />
 );
 

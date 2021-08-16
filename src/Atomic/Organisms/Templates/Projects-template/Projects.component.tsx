@@ -20,7 +20,7 @@ export const ProjectsTemplate: React.FC = () => (
         bodyText={`Crown Clothing is a modern full-stack e-commerce clothing website offering
           secure online transactions and a pleasant user experience.
           This website provides users with a quick and easy way to shop for clothing.`}
-        link={{ url: Urls.caseStudys.clownClothing, text: 'VIEW CASE STUDY' }}
+        link={{ url: Urls.caseStudys.crownClothing, text: 'VIEW CASE STUDY' }}
       />
     </ScrollingAnimation>
     <Spacer bottom='md' />
