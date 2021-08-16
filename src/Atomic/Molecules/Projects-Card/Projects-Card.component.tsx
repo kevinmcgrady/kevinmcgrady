@@ -38,7 +38,7 @@ export const ProjectsCard: React.FC<IProjectsCardProps> = ({
       <Column size={6}>
         <Typography variant='smalltitle'>{title}</Typography>
         <Typography variant='body'>{bodyText}</Typography>
-        <Spacer top='sm' />
+        <Spacer top='md' />
         <Link to={link.url} variant='gradient'>
           {link.text}
         </Link>

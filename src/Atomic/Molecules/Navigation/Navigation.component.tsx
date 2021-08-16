@@ -7,10 +7,14 @@ export const Navigation: React.FC = () => (
   <div className='navigation'>
     <ul className='navigation-list'>
       <li>
-        <Link to={Urls.mainNavigation.work}>Work</Link>
+        <Link variant='navigation' to={Urls.mainNavigation.work}>
+          Work
+        </Link>
       </li>
       <li>
-        <Link to={Urls.mainNavigation.about}>About</Link>
+        <Link variant='navigation' to={Urls.mainNavigation.about}>
+          About
+        </Link>
       </li>
     </ul>
   </div>

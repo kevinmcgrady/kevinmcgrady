@@ -18,8 +18,8 @@ interface ICaseStudyTemplateProps {
   headerImage: { url: string; alt: string };
   headerImageMobile: string;
   createdDate: string;
-  problemText: string;
-  solutionText: string;
+  frontEnd: string[];
+  backEnd: string[];
   projectUrl: string;
 }
 
@@ -29,8 +29,8 @@ export const CaseStudyTemplate: React.FC<ICaseStudyTemplateProps> = ({
   subTitle,
   headerImage,
   createdDate,
-  problemText,
-  solutionText,
+  frontEnd,
+  backEnd,
   projectUrl,
   headerImageMobile,
 }) => (
@@ -76,18 +76,21 @@ export const CaseStudyTemplate: React.FC<ICaseStudyTemplateProps> = ({
             </Column>
             <Column size={6}>
               <ScrollingAnimation>
-                <Typography variant='subtitle'>Problem:</Typography>
-                <Typography>{problemText}</Typography>
+                <Typography variant='subtitle'>Front-End:</Typography>
+                {frontEnd.map((content) => (
+                  <Spacer bottom='sm'>
+                    <Typography>{content}</Typography>
+                  </Spacer>
+                ))}
               </ScrollingAnimation>
               <Spacer bottom='md' />
               <ScrollingAnimation>
-                <Typography variant='subtitle'>Solution:</Typography>
-                <Typography>{solutionText}</Typography>
-              </ScrollingAnimation>
-              <Spacer bottom='md' />
-              <ScrollingAnimation>
-                <Typography variant='subtitle'>Solution:</Typography>
-                <Typography>{solutionText}</Typography>
+                <Typography variant='subtitle'>Back-End:</Typography>
+                {backEnd.map((content) => (
+                  <Spacer bottom='sm'>
+                    <Typography>{content}</Typography>
+                  </Spacer>
+                ))}
               </ScrollingAnimation>
               <Spacer bottom='md' />
               <ScrollingAnimation>

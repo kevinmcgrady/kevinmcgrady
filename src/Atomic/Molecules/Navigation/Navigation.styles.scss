@@ -1,3 +1,7 @@
 .navigation-list {
   display: flex;
 }
+
+a.navigation-link:not(.active) {
+  opacity: 0.5;
+}

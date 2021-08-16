@@ -17,10 +17,9 @@ export const ProjectsTemplate: React.FC = () => (
           alt: 'project',
         }}
         title='Crown Clothing'
-        bodyText='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-        quaerat, facilis tenetur numquam reiciendis dignissimos quasi, vitae
-        amet reprehenderit, libero adipisci tempore corrupti! Consequatur
-        quam et tempore ad rem ea!'
+        bodyText={`Crown Clothing is a modern full-stack e-commerce clothing website offering
+          secure online transactions and a pleasant user experience.
+          This website provides users with a quick and easy way to shop for clothing.`}
         link={{ url: Urls.caseStudys.clownClothing, text: 'VIEW CASE STUDY' }}
       />
     </ScrollingAnimation>
@@ -32,10 +31,9 @@ export const ProjectsTemplate: React.FC = () => (
           alt: 'project',
         }}
         title='Natours'
-        bodyText='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-        quaerat, facilis tenetur numquam reiciendis dignissimos quasi, vitae
-        amet reprehenderit, libero adipisci tempore corrupti! Consequatur
-        quam et tempore ad rem ea!'
+        bodyText={`Natours is an online event booking platform.
+        This application allows users to book securely book tours to unique destinations.
+        This application is also a full-stack application with the main focus on security.`}
         link={{ url: Urls.caseStudys.natours, text: 'VIEW CASE STUDY' }}
       />
     </ScrollingAnimation>
