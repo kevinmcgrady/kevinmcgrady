@@ -1,4 +1,5 @@
 import React from 'react';
+import { Urls } from '../../../utils/urls';
 import { Grid, Column, Row } from '../../Molecules/Grid';
 import { Typography } from '../../Atoms/Typography/Typography.component';
 import { Spacer } from '../../Molecules/Spacer/Spacer.component';
@@ -13,19 +14,15 @@ export const Footer: React.FC = () => (
           <Spacer bottom='sm' />
           <Typography variant='footertext'>
             Send me an email at{' '}
-            <Link variant='external' to='mailto:kevinmcgrady47@gmail.com'>
+            <Link variant='external' to={Urls.email}>
               kevinmcgrady47@gmail.com
             </Link>
           </Typography>
           <Spacer bottom='sm' />
-          <Link variant='external' to='https://github.com/kevinmcgrady'>
+          <Link variant='external' to={Urls.gitHub.profile}>
             GitHub
           </Link>
-          <Link
-            variant='external'
-            to='https://www.linkedin.com/in/kevin-mcgrady-639851102/'
-            hasPadding
-          >
+          <Link variant='external' to={Urls.linkedIn.profile} hasPadding>
             LinkedIn
           </Link>
           <Spacer bottom='sm' />
