@@ -39,7 +39,7 @@ function usePageViews() {
   let location = useLocation();
   useEffect(() => {
     if (!window.GA_INITALIZED) {
-      ReactGA.initialize('G-DYK6YQKY0H');
+      ReactGA.initialize('UA-73960020-1');
       window.GA_INITALIZED = true;
     }
     ReactGA.set({ page: location.pathname });
