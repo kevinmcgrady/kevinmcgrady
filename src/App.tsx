@@ -1,5 +1,7 @@
-import React, { Suspense } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React, { Suspense, useEffect } from 'react';
+import ReactGA from 'react-ga';
+import global from './types';
+import { Switch, Route, useLocation } from 'react-router-dom';
 import { ScrollReset } from './Atomic/Molecules/ScrollReset';
 import { Urls } from './utils/urls';
 import Loading from './Atomic/Pages/Loading/Loading.component';
@@ -33,7 +35,20 @@ const About = React.lazy(() => {
   ]).then(([moduleExports]) => moduleExports);
 });
 
+function usePageViews() {
+  let location = useLocation();
+  useEffect(() => {
+    if (!window.GA_INITALIZED) {
+      ReactGA.initialize('G-DYK6YQKY0H');
+      window.GA_INITALIZED = true;
+    }
+    ReactGA.set({ page: location.pathname });
+    ReactGA.pageview(location.pathname);
+  }, [location]);
+}
+
 function App() {
+  usePageViews();
   return (
     <div className='app'>
       <ScrollReset>
