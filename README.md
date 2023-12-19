@@ -1,3 +1,3 @@
 ## Hi, I'm Kev 👋
 
-I'm a fullstack javascript developer based in _Glasgow_, Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿
+I'm a full stack javascript developer based in Glasgow, Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿
